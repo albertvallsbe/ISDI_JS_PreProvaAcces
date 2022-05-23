@@ -1,0 +1,81 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Rellotge - Prova 4</title>
+
+    <style type="text/css">
+        div {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        span {
+            color: black;
+            align-items: center;
+        }
+    </style>
+    <script type="text/javascript">
+        const miArray = [
+            ['Hores', 2],
+            ['minuts', 10],
+            ['segons', 10]
+        ];
+
+        // const stopwatch = document.getElementById('time');
+
+        // let stopWatchInterval;
+        // let runningTime = 0;
+
+        miArray[0];
+
+        
+        for (let i = 0; i < miArray[0][1]; i++) {
+           
+            for (let j = 0; j < miArray[1][1]; j++) {
+                
+                setTimeout(() => {
+                    for (let k = 0; k < miArray[2][1]; k++) {
+                        
+                        
+                        
+                        setTimeout(() => {
+                            console.log(" " + [i] + ":" + [j] + ":" + [k] + " ");
+                            let resultado = document.getElementById('time');
+
+                           
+                            // //resultado.innerHTML = '';
+
+                            // //resultado.innerHTML = " " + [i] + ":" + [j] + ":" + [k] + " ";
+
+                             resultado.innerHTML = " " + [i] + ":" + [j] + ":" + [k] + " ";
+                           
+                        }, 2000);
+                    }
+                }, 2000);
+            }
+        }
+
+
+
+
+
+
+
+
+        //document.getElementById("time").innerHTML = mainTime;
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <h1 class="main_time" id="time">05:08:09</h1>
+    </div>
+</body>
+
+</html>

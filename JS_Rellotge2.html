@@ -1,0 +1,57 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Rellotge - Prova 2</title>
+
+    <style type="text/css">
+        div {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        span {
+            color: black;
+            align-items: center;
+        }
+    </style>
+    <script type="text/javascript">
+        let prova = document.getElementById("time");
+
+        setInterval(function () {
+
+            let timeNow = new Date();
+
+            let hours = timeNow.getHours();
+            let minutes = timeNow.getMinutes();
+            let seconds = timeNow.getSeconds();
+
+            if (hours < 10) {
+                hours = "0" + hours;
+            }
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            if (seconds < 10) {
+                seconds = "0" + seconds;
+            }
+
+            prova.innerHTML = hours + " : " + minutes + " : " + seconds;
+
+        }, 1000);
+
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <span class="main_time" id="time"> 00 : 00 : 00</span>
+    </div>
+</body>
+
+</html>

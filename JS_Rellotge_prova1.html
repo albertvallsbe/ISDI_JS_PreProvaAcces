@@ -1,0 +1,52 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Rellotge - Prova 1</title>
+
+    <style type="text/css">
+        div {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: black;
+            align-items: center;
+        }
+    </style>
+    <script type="text/javascript">
+
+        function generateTime() {
+            let timeNow = new Date();
+
+            let hours = timeNow.getHours();
+            let minutes = timeNow.getMinutes();
+            let seconds = timeNow.getSeconds();
+
+            let mainTime = `${hours}:${minutes}:${seconds}`;
+
+            document.getElementById("time").innerHTML = mainTime;
+
+
+        }
+        setInterval(() => {
+            generateTime();
+        }, 1000);
+
+
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <h1 class="main_time" id="time"> </h1>
+    </div>
+</body>
+
+</html>
