@@ -20,43 +20,36 @@
         }
     </style>
     <script type="text/javascript">
-        const miArray = [
-            ['Hores', 2],
-            ['minuts', 10],
-            ['segons', 10]
-        ];
+        // const miArray = [
+        //     ['Hores', 24],
+        //     ['minuts', 60],
+        //     ['segons', 10]
+        // ];
 
-        // const stopwatch = document.getElementById('time');
 
-        // let stopWatchInterval;
-        // let runningTime = 0;
 
-        miArray[0];
+        // for (let i = 0; i < miArray[0][1]; i++) {
 
-        
-        for (let i = 0; i < miArray[0][1]; i++) {
-           
-            for (let j = 0; j < miArray[1][1]; j++) {
-                
-                setTimeout(() => {
-                    for (let k = 0; k < miArray[2][1]; k++) {
-                        
-                        
-                        
-                        setTimeout(() => {
-                            console.log(" " + [i] + ":" + [j] + ":" + [k] + " ");
-                            let resultado = document.getElementById('time');
+        //     for (let j = 0; j < miArray[1][1]; j++) {
 
-                           
-                            // //resultado.innerHTML = '';
+        //         console.log([i] + ':' + [j]);
+        //         if (miArray.findIndex[7][15]) {
+        //             //alert("Despierta");
+        //             console.log('Despierta');
+        //         }
+        //     }
+        // }
+        const miArray = [24, 60];
 
-                            // //resultado.innerHTML = " " + [i] + ":" + [j] + ":" + [k] + " ";
+        for (let i = 0; i < miArray[0]; i++) {
 
-                             resultado.innerHTML = " " + [i] + ":" + [j] + ":" + [k] + " ";
-                           
-                        }, 2000);
-                    }
-                }, 2000);
+            for (let j = 0; j < miArray[1]; j++) {
+
+                console.log([i] + ':' + [j]);
+                if (miArray[i][j] = "7:15") {
+                   
+                    console.log('Despierta');
+                }
             }
         }
 
@@ -67,7 +60,7 @@
 
 
 
-        //document.getElementById("time").innerHTML = mainTime;
+        //document.getElementById("time").innerHTML = resultado;
     </script>
 
 </head>

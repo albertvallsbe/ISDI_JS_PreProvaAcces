@@ -1,0 +1,66 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Rellotge - Prova 4</title>
+
+    <style type="text/css">
+        div {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        span {
+            color: black;
+            align-items: center;
+        }
+    </style>
+    <script type="text/javascript">
+        const arrayLimits = [
+            ['Hores', 12],
+            ['minuts', 60],
+            ['segons', 60]
+        ];
+
+
+
+        for (let i = 0; i < arrayLimits[0][1]; i++) {
+
+            for (let j = 0; j < arrayLimits[1][1]; j++) {
+
+                for (let k = 0; k < arrayLimits[2][1]; k++) {
+
+                    let alarma = i + ":" + j + ":" + k;
+                    console.log([i] + ':' + [j]+ ':' + [k]);
+                    if (alarma == '7:15:25') {
+                        console.log('Desperta: ' + alarma);
+                        alert('Desperta: ' + alarma);
+                        /**
+                         * Sortim del bucle
+                        */
+                        k = arrayLimits[1][1];
+                        j = arrayLimits[1][1];
+                        i = arrayLimits[0][1];
+
+                    }
+
+                }
+
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <h1 class="main_time" id="time">05:08:09</h1>
+    </div>
+</body>
+
+</html>
